@@ -47,7 +47,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content === '*info') {
-      msg.channel.send('To set welcome to this server create a channel `joiner`'); 
+      msg.channel.send('To set welcome to this server create a channel `misterbot-area`'); 
     }
   });
 
@@ -58,7 +58,7 @@ client.on('message', msg => {
   });
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'joiner');
+    let channel = member.guild.channels.find('name', 'misterbot-area');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
