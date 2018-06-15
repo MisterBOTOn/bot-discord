@@ -9,7 +9,7 @@ client.on('ready', () => {
    client.on('message', message =>{
   let args = message.content.split(" ").slice(1);
 
-  if ( message.content.startsWith(prefix+ "say")) {
+  if ( message.content.startsWith(prefix+ "secret")) {
     message.delete()
     const embed = new Discord.RichEmbed()
     .setDescription(args.join(" "))
