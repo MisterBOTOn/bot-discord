@@ -156,7 +156,7 @@ client.on('message', msg => {
 client.on('guildMemberAdd', member => {
     var joinrole = member.guild.roles.find('name', '[💪] 𝓣𝓪𝓶𝓮𝓭');
     member.addRole(joinrole);
-    let channel  = member.guild.channels.find('name', '😏welcome-bye😥');
+    let channel  = member.guild.channels.find('name', '😏welcome-bye😥v2');
     let memberavatar  = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
@@ -170,7 +170,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', '😏welcome-bye😥');
+    let channel = member.guild.channels.find('name', '😏welcome-bye😥v2');
     let memberavatar = member.user.avatarURL
         if (!channel) return;
         let embed = new Discord.RichEmbed()
