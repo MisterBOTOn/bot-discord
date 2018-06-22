@@ -162,8 +162,8 @@ client.on('guildMemberAdd', member => {
         let embed = new Discord.RichEmbed()
         .setColor('#FF000')
         .setThumbnail(memberavatar)
-        .addField('? | Name: ', `${member}`)
-        .addField('? | Welcome', `Bine ai venit in comunitatea noastra`)
+        .addField('✘ | Name: ', `${member}`)
+        .addField('✘ | Welcome', `**Bine ai venit in comunitatea noastra**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
@@ -176,8 +176,8 @@ client.on('guildMemberRemove', member => {
         let embed = new Discord.RichEmbed()
         .setColor('#ff0000')
         .setThumbnail(memberavatar)
-        .addField('? | Name: ', `${member}`)
-        .addField('? | Bye -', `La revedere , ne  vom revedea`)
+        .addField('✘ | Name: ', `${member}`)
+        .addField('✘ | Bye -', `**La revedere , ne  vom revedea in forta**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
