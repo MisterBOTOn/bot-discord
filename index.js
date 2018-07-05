@@ -16,7 +16,7 @@ client.on('guildMemberAdd', member => {
         .setColor('#FF000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Welcome', `**Bine ai venit in comunitatea noastra**`)
+        .addField('✘ | Welcome', `**<a:fast:459053501625008139>Bine ai venit in comunitatea noastra<a:fast:459053501625008139>**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
