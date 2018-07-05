@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const prefix = "m?"
 
 client.on('ready', () => {
-    client.user.setGame('m?help ', 'https://www.twitch.tv/live')
 })   
 
 client.on('guildMemberAdd', member => {
@@ -16,7 +15,7 @@ client.on('guildMemberAdd', member => {
         .setColor('#FF000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Welcome', `**<a:fast:459053501625008139> Bine ai venit in comunitatea noastra <a:fast:459053501625008139>**`)
+        .addField('✘ | Welcome', `**<a:fastmod:464500224384303126> Bine ai venit in comunitatea noastra <a:fastmod:464500224384303126>**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
