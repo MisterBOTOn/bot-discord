@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = "m?"
 
 client.on('ready', () => {
+    client.user.setGame('m?help ', 'https://www.twitch.tv/live')
 })   
 
 client.on('guildMemberAdd', member => {
