@@ -4,6 +4,23 @@ const prefix = "m?"
 
 client.on('ready', () => {
 })   
+}
+  
+});
+
+client.on('message', message =>{
+  let args = message.content.split(" ").slice(1);
+
+  if ( message.content.startsWith("https://discord.gg")) {
+    message.delete()
+    let embed = new Discord.RichEmbed()
+            .setTitle('No Invite Link')
+            .setColor('RANDOM')
+            .setFooter('No invite link!')
+            .setTimestamp()
+        
+        message.channel.send(embed);
+  }
 
 client.on('guildMemberAdd', member => {
     var joinrole = member.guild.roles.find('name', '✌ || 𝓜𝒆𝓶𝓫𝓻𝓾 𝓜𝔂𝓽𝓱𝓲𝓬');
